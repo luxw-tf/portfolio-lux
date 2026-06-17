@@ -6,8 +6,8 @@ import './SelectedWork.css';
 const projects = [
   {
     id: 1,
-    title: "p2p signal guild campaign",
-    description: "video campaign explaining p2p staking mechanics.",
+    title: "how do transaction limits work on p2p",
+    description: "everyone's asking why their p2p limit is so low. nobody's talking about this.",
     link: "https://x.com/luxw_tf/status/2065308789566484729",
     embed: (
       <iframe
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "p2p crypto buying tutorial",
+    title: "how to actually buy crypto without being scammed",
     description: "a tutorial for crypto newcomers to buy tokens frm p2p.me",
     link: "https://x.com/luxw_tf/status/2062493646143033706",
     embed: (
