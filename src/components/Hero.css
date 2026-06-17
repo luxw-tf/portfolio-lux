@@ -112,6 +112,9 @@
 .hero-links .wide-btn {
   padding: 0 1.5rem;
   font-weight: 500;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  border-color: var(--text-color);
 }
 
 .hero-links a:hover {
@@ -119,6 +122,11 @@
   color: var(--bg-color);
   transform: translateY(-3px);
   opacity: 1;
+}
+
+.hero-links .wide-btn:hover {
+  background-color: transparent;
+  color: var(--text-color);
 }
 
 .hero-links svg {
