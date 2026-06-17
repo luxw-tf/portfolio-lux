@@ -68,7 +68,7 @@ const Wins = () => {
         
         <div className="wins-grid">
           {winsData.map((win) => (
-            <a href={win.link} target="_blank" rel="noreferrer" className="win-card" key={win.id}>
+            <div className="win-card" key={win.id}>
               <div className="win-media">
                 {win.embed ? (
                   win.embed
@@ -79,12 +79,12 @@ const Wins = () => {
               <div className="win-content">
                 <h3 className="win-title">{win.title}</h3>
                 <p className="win-desc">{win.description}</p>
-                <div className="win-link">
+                <a href={win.link} target="_blank" rel="noreferrer" className="win-link" style={{ textDecoration: 'none', color: 'inherit' }}>
                   <span>view post</span>
                   <ExternalLink size={16} />
-                </div>
+                </a>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>
