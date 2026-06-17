@@ -13,6 +13,12 @@
   margin: 0;
 }
 
+@media (max-width: 900px) {
+  .work-showcase {
+    width: 100%;
+  }
+}
+
 .work-media {
   width: 100%;
   aspect-ratio: 16 / 9;
