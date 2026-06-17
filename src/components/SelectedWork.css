@@ -1,0 +1,123 @@
+.section-title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 500;
+  margin-bottom: 3rem;
+  letter-spacing: -0.02em;
+}
+
+.work-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 65%;
+  margin: 0;
+}
+
+.work-media {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #1a1a1a;
+  position: relative;
+}
+
+.media-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #111, #222);
+  position: relative;
+  transition: transform 0.5s ease;
+}
+
+.media-placeholder:hover {
+  transform: scale(1.02);
+  opacity: 1;
+}
+
+.media-icon-wrapper {
+  color: var(--text-muted);
+  transition: color 0.3s ease;
+}
+
+.media-placeholder:hover .media-icon-wrapper {
+  color: var(--text-color);
+}
+
+.media-overlay {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.75rem 1.25rem;
+  border-radius: 100px;
+  backdrop-filter: blur(10px);
+  color: var(--text-color);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.media-placeholder:hover .media-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.work-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.work-info {
+  max-width: 600px;
+}
+
+.work-title {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  margin-bottom: 0.5rem;
+}
+
+.work-desc {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
+
+.work-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-btn {
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+
+.work-counter {
+  font-variant-numeric: tabular-nums;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}

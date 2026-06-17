@@ -1,0 +1,111 @@
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 10vh 0;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+}
+
+.hero-top {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.headline {
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sub-headline {
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  color: var(--text-muted);
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.currently-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.currently-title {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.currently-list {
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+.currently-list li {
+  margin-bottom: 0.25rem;
+}
+
+.hero-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.hero-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  color: var(--text-muted);
+}
+
+.hero-links a:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  transform: translateY(-3px);
+  opacity: 1;
+}
+
+.hero-links svg {
+  width: 20px;
+  height: 20px;
+}

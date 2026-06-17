@@ -1,0 +1,23 @@
+.about-section {
+  padding: 15vh 0;
+}
+
+.about-content {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-line {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: var(--text-color);
+}
+
+.about-line:nth-child(2),
+.about-line:nth-child(3) {
+  color: var(--text-muted);
+}
