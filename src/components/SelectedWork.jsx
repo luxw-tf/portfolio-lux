@@ -20,9 +20,17 @@ const projects = [
   },
   {
     id: 2,
-    title: "p2p trading contest campaign",
+    title: "p2p crypto buying tutorial",
     description: "content package built around an ongoing trading campaign.",
-    link: "https://x.com/luxw_tf/status/2062493646143033706"
+    link: "https://x.com/luxw_tf/status/2062493646143033706",
+    embed: (
+      <iframe
+        src="https://player.mux.com/y02evHKGyEkW9yQSMBpvRZIBsT6yTiiTbZjS13JKe4jQ?poster_time=0"
+        style={{ width: "100%", height: "100%", border: "none", aspectRatio: "16/9" }}
+        allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+        allowFullScreen
+      ></iframe>
+    )
   }
 ];
 
