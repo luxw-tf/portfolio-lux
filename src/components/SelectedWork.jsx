@@ -21,7 +21,7 @@ const projects = [
   {
     id: 2,
     title: "p2p crypto buying tutorial",
-    description: "content package built around an ongoing trading campaign.",
+    description: "a tutorial for crypto newcomers to buy tokens frm p2p.me",
     link: "https://x.com/luxw_tf/status/2062493646143033706",
     embed: (
       <iframe
