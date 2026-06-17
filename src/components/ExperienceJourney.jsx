@@ -28,7 +28,7 @@ const experienceData = [
     company: "p2p",
     role: "content creator",
     logo: "/images/p2p.png",
-    description: "built content for staking and trading campaigns, creating video scripts, social copy, and campaign messaging tailored for local audiences."
+    description: "creating content for brand campaigns, writing social copy, and developing educational tutorials tailored to local audiences to drive engagement and product adoption."
   }
 ];
 
