@@ -92,6 +92,7 @@ const Hero = () => {
         {
           duration: 600,
           easing: 'ease-in-out',
+          fill: 'forwards',
           pseudoElement: isGoingDark 
             ? '::view-transition-old(root)' 
             : '::view-transition-new(root)'
