@@ -12,14 +12,28 @@ const winsData = [
     title: "superteam coldstar bounty winner",
     description: "won a superteam bounty by creating a campaign video for coldstar.",
     link: "https://x.com/luxw_tf/status/2047013924521001152",
-    image: "/images/coldstar.png"
+    embed: (
+      <iframe
+        src="https://player.mux.com/Kbzcnfs00k8eLy11mveZUsc8601XXkEj01ZhLhj9M01wenk?poster_time=0"
+        style={{ width: "100%", height: "100%", border: "none", aspectRatio: "16/9" }}
+        allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+        allowFullScreen
+      ></iframe>
+    )
   },
   {
     id: 2,
     title: "tigergraph content bounty winner",
     description: "won a content bounty by creating a campaign video for tigergraph.",
     link: "https://x.com/luxw_tf/status/2052091910907691275",
-    image: "/images/tigergraph.jpg"
+    embed: (
+      <iframe
+        src="https://player.mux.com/BiiTq00hJaiKLT00RoBHWHROHtkuijje16q9xwCZN47Dw?poster_time=0"
+        style={{ width: "100%", height: "100%", border: "none", aspectRatio: "16/9" }}
+        allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+        allowFullScreen
+      ></iframe>
+    )
   }
 ];
 
@@ -56,8 +70,8 @@ const Wins = () => {
           {winsData.map((win) => (
             <a href={win.link} target="_blank" rel="noreferrer" className="win-card" key={win.id}>
               <div className="win-media">
-                {win.image ? (
-                  <img src={win.image} alt={win.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                {win.embed ? (
+                  win.embed
                 ) : (
                   <Trophy size={48} className="win-icon" />
                 )}
