@@ -128,7 +128,7 @@ const Hero = () => {
           
           <div className="hero-links">
             <a href="https://x.com/luxw_tf" target="_blank" rel="noreferrer" className="wide-btn" aria-label="x (twitter)">
-              <FaXTwitter /> follow me on x
+              <FaXTwitter /> follow me
             </a>
             <a href="mailto:stevefrmspace@gmail.com" className="icon-btn" aria-label="email">
               <FaEnvelope />
