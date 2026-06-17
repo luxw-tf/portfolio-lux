@@ -58,7 +58,6 @@ const Hero = () => {
     if (e.target.closest('a')) return;
 
     const section = heroRef.current;
-    const isGoingDark = section.classList.contains('light-theme');
 
     if (!document.startViewTransition) {
       section.classList.toggle('light-theme');
@@ -72,10 +71,6 @@ const Hero = () => {
       Math.max(y, window.innerHeight - y)
     );
 
-    if (isGoingDark) {
-      document.documentElement.classList.add('transitioning-to-dark');
-    }
-
     const transition = document.startViewTransition(() => {
       section.classList.toggle('light-theme');
     });
@@ -87,20 +82,16 @@ const Hero = () => {
       ];
       document.documentElement.animate(
         {
-          clipPath: isGoingDark ? [...clipPath].reverse() : clipPath
+          clipPath: section.classList.contains('light-theme') ? clipPath : [...clipPath].reverse()
         },
         {
           duration: 600,
           easing: 'ease-in-out',
-          pseudoElement: isGoingDark 
-            ? '::view-transition-old(root)' 
-            : '::view-transition-new(root)'
+          pseudoElement: section.classList.contains('light-theme') 
+            ? '::view-transition-new(root)' 
+            : '::view-transition-old(root)'
         }
       );
-    });
-
-    transition.finished.then(() => {
-      document.documentElement.classList.remove('transitioning-to-dark');
     });
   };
 
