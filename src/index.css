@@ -95,6 +95,10 @@ html.lenis {
   overflow: hidden;
 }
 
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
 
 
 /* Buttons and utilities */
