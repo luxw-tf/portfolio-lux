@@ -11,7 +11,7 @@ const projects = [
     link: "https://x.com/luxw_tf/status/2065308789566484729",
     embed: (
       <iframe
-        src="https://player.mux.com/p6MDy7zPJj3GPnDcx3Fe2mx1kqGIFE02SiYhixoxkzSU?poster=https%3A%2F%2Fimage.mux.com%2Fp6MDy7zPJj3GPnDcx3Fe2mx1kqGIFE02SiYhixoxkzSU%2Fthumbnail.png%3Ftime%3D0"
+        src="https://player.mux.com/p6MDy7zPJj3GPnDcx3Fe2mx1kqGIFE02SiYhixoxkzSU?poster=https%3A%2F%2Fimage.mux.com%2Fp6MDy7zPJj3GPnDcx3Fe2mx1kqGIFE02SiYhixoxkzSU%2Fthumbnail.png%3Ftime%3D0&autoplay=true&muted=true"
         style={{ width: "100%", height: "100%", border: "none", aspectRatio: "16/9" }}
         allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
         allowFullScreen
@@ -25,7 +25,7 @@ const projects = [
     link: "https://x.com/luxw_tf/status/2062493646143033706",
     embed: (
       <iframe
-        src="https://player.mux.com/y02evHKGyEkW9yQSMBpvRZIBsT6yTiiTbZjS13JKe4jQ?poster_time=0"
+        src="https://player.mux.com/y02evHKGyEkW9yQSMBpvRZIBsT6yTiiTbZjS13JKe4jQ?poster_time=0&autoplay=true&muted=true"
         style={{ width: "100%", height: "100%", border: "none", aspectRatio: "16/9" }}
         allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
         allowFullScreen

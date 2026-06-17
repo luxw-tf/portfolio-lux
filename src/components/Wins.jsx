@@ -14,7 +14,7 @@ const winsData = [
     link: "https://x.com/luxw_tf/status/2047013924521001152",
     embed: (
       <iframe
-        src="https://player.mux.com/Kbzcnfs00k8eLy11mveZUsc8601XXkEj01ZhLhj9M01wenk?poster_time=0"
+        src="https://player.mux.com/Kbzcnfs00k8eLy11mveZUsc8601XXkEj01ZhLhj9M01wenk?poster_time=0&autoplay=true&muted=true"
         style={{ width: "100%", height: "100%", border: "none", aspectRatio: "16/9" }}
         allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
         allowFullScreen
@@ -28,7 +28,7 @@ const winsData = [
     link: "https://x.com/luxw_tf/status/2052091910907691275",
     embed: (
       <iframe
-        src="https://player.mux.com/BiiTq00hJaiKLT00RoBHWHROHtkuijje16q9xwCZN47Dw?poster_time=0"
+        src="https://player.mux.com/BiiTq00hJaiKLT00RoBHWHROHtkuijje16q9xwCZN47Dw?poster_time=0&autoplay=true&muted=true"
         style={{ width: "100%", height: "100%", border: "none", aspectRatio: "16/9" }}
         allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
         allowFullScreen
