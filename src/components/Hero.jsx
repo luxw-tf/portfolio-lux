@@ -127,10 +127,12 @@ const Hero = () => {
           </div>
           
           <div className="hero-links">
-            <a href="https://github.com/luxw-tf" target="_blank" rel="noreferrer" aria-label="github"><FaGithub /></a>
-            <a href="https://x.com/luxw_tf" target="_blank" rel="noreferrer" aria-label="x (twitter)"><FaXTwitter /></a>
-            <a href="https://www.linkedin.com/in/vedant-sanodiya-6ab79133a" target="_blank" rel="noreferrer" aria-label="linkedin"><FaLinkedin /></a>
-            <a href="mailto:stevefrmspace@gmail.com" aria-label="email"><FaEnvelope /></a>
+            <a href="https://x.com/luxw_tf" target="_blank" rel="noreferrer" className="wide-btn" aria-label="x (twitter)">
+              <FaXTwitter /> follow me on x
+            </a>
+            <a href="mailto:stevefrmspace@gmail.com" className="icon-btn" aria-label="email">
+              <FaEnvelope />
+            </a>
           </div>
         </div>
       </div>
