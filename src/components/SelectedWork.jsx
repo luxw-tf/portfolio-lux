@@ -11,7 +11,7 @@ const projects = [
     link: "https://x.com/luxw_tf/status/2065308789566484729",
     embed: (
       <iframe
-        src="https://player.mux.com/p6MDy7zPJj3GPnDcx3Fe2mx1kqGIFE02SiYhixoxkzSU"
+        src="https://player.mux.com/p6MDy7zPJj3GPnDcx3Fe2mx1kqGIFE02SiYhixoxkzSU?poster=https%3A%2F%2Fimage.mux.com%2Fp6MDy7zPJj3GPnDcx3Fe2mx1kqGIFE02SiYhixoxkzSU%2Fthumbnail.png%3Ftime%3D0"
         style={{ width: "100%", height: "100%", border: "none", aspectRatio: "16/9" }}
         allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
         allowFullScreen

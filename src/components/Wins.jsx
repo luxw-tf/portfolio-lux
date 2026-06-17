@@ -11,13 +11,15 @@ const winsData = [
     id: 1,
     title: "superteam coldstar bounty winner",
     description: "won a superteam bounty by creating a campaign video for coldstar.",
-    link: "https://x.com/luxw_tf/status/2047013924521001152"
+    link: "https://x.com/luxw_tf/status/2047013924521001152",
+    image: "/images/coldstar.png"
   },
   {
     id: 2,
     title: "tigergraph content bounty winner",
     description: "won a content bounty by creating a campaign video for tigergraph.",
-    link: "https://x.com/luxw_tf/status/2052091910907691275"
+    link: "https://x.com/luxw_tf/status/2052091910907691275",
+    image: "/images/tigergraph.jpg"
   }
 ];
 
@@ -54,7 +56,11 @@ const Wins = () => {
           {winsData.map((win) => (
             <a href={win.link} target="_blank" rel="noreferrer" className="win-card" key={win.id}>
               <div className="win-media">
-                <Trophy size={48} className="win-icon" />
+                {win.image ? (
+                  <img src={win.image} alt={win.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                ) : (
+                  <Trophy size={48} className="win-icon" />
+                )}
               </div>
               <div className="win-content">
                 <h3 className="win-title">{win.title}</h3>
