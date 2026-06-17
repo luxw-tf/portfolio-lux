@@ -22,10 +22,10 @@
   mix-blend-mode: normal;
 }
 
-html.transitioning-to-dark ::view-transition-old(root) {
+html.transitioning-to-dark::view-transition-old(root) {
   z-index: 2;
 }
-html.transitioning-to-dark ::view-transition-new(root) {
+html.transitioning-to-dark::view-transition-new(root) {
   z-index: 1;
 }
 
