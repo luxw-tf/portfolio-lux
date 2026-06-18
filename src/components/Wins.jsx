@@ -64,7 +64,7 @@ const Wins = () => {
   return (
     <section className="wins-section" ref={sectionRef}>
       <div className="container">
-        <h2 className="section-title">content bounty wins</h2>
+        <h2 className="section-title">content bounties</h2>
         
         <div className="wins-grid">
           {winsData.map((win) => (
