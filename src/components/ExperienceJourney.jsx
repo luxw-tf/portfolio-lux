@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 const experienceData = [
   {
     id: 1,
-    year: "2023 — present",
+    year: "2025 — present",
     company: "builderbase",
     role: "community lead & content strategist",
     logo: "/images/bb.png",
