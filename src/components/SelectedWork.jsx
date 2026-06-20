@@ -112,19 +112,14 @@ const SelectedWork = () => {
               <p className="work-desc">{projects[currentIndex].description}</p>
             </div>
             
-            <div className="work-actions">
-              <a href={projects[currentIndex].link} target="_blank" rel="noreferrer" className="view-post-btn">
-                view original post <ExternalLink size={16} />
-              </a>
-              <div className="work-nav">
-                <button onClick={prevProject} className="nav-btn" aria-label="previous project">
-                  <ArrowLeft />
-                </button>
-                <span className="work-counter">0{currentIndex + 1} / 0{projects.length}</span>
-                <button onClick={nextProject} className="nav-btn" aria-label="next project">
-                  <ArrowRight />
-                </button>
-              </div>
+            <div className="work-nav">
+              <button onClick={prevProject} className="nav-btn" aria-label="previous project">
+                <ArrowLeft />
+              </button>
+              <span className="work-counter">0{currentIndex + 1} / 0{projects.length}</span>
+              <button onClick={nextProject} className="nav-btn" aria-label="next project">
+                <ArrowRight />
+              </button>
             </div>
           </div>
         </div>
