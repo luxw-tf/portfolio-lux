@@ -108,23 +108,23 @@ const SelectedWork = () => {
           
           <div className="work-details" ref={infoRef}>
             <div className="work-info">
-              <div className="work-title-wrapper">
-                <h3 className="work-title">{projects[currentIndex].title}</h3>
-                <a href={projects[currentIndex].link} target="_blank" rel="noreferrer" className="work-ext-link" aria-label="view original post">
-                  <ExternalLink size={24} />
-                </a>
-              </div>
+              <h3 className="work-title">{projects[currentIndex].title}</h3>
               <p className="work-desc">{projects[currentIndex].description}</p>
             </div>
             
-            <div className="work-nav">
-              <button onClick={prevProject} className="nav-btn" aria-label="previous project">
-                <ArrowLeft />
-              </button>
-              <span className="work-counter">0{currentIndex + 1} / 0{projects.length}</span>
-              <button onClick={nextProject} className="nav-btn" aria-label="next project">
-                <ArrowRight />
-              </button>
+            <div className="work-actions">
+              <a href={projects[currentIndex].link} target="_blank" rel="noreferrer" className="view-post-btn">
+                view original post <ExternalLink size={16} />
+              </a>
+              <div className="work-nav">
+                <button onClick={prevProject} className="nav-btn" aria-label="previous project">
+                  <ArrowLeft />
+                </button>
+                <span className="work-counter">0{currentIndex + 1} / 0{projects.length}</span>
+                <button onClick={nextProject} className="nav-btn" aria-label="next project">
+                  <ArrowRight />
+                </button>
+              </div>
             </div>
           </div>
         </div>
