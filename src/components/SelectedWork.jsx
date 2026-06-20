@@ -6,6 +6,20 @@ import './SelectedWork.css';
 const projects = [
   {
     id: 1,
+    title: "new project",
+    description: "description coming soon",
+    link: "#",
+    embed: (
+      <iframe
+        src="https://player.mux.com/Sx3hCbceXxMmBKa7qwz8lmR00HfQLKzVLN101iWfVRvPQ?poster_time=0&autoplay=true&muted=true"
+        style={{ width: "100%", height: "100%", border: "none", aspectRatio: "16/9" }}
+        allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+        allowFullScreen
+      ></iframe>
+    )
+  },
+  {
+    id: 2,
     title: "how do transaction limits work on p2p",
     description: "everyone's asking why their p2p limit is so low. nobody's talking about this.",
     link: "https://x.com/luxw_tf/status/2065308789566484729",
@@ -19,7 +33,7 @@ const projects = [
     )
   },
   {
-    id: 2,
+    id: 3,
     title: "how to actually buy crypto without being scammed",
     description: "a tutorial for crypto newcomers to buy tokens frm p2p.me",
     link: "https://x.com/luxw_tf/status/2062493646143033706",
