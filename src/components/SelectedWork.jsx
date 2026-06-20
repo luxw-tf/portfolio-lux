@@ -6,9 +6,9 @@ import './SelectedWork.css';
 const projects = [
   {
     id: 1,
-    title: "new project",
-    description: "description coming soon",
-    link: "#",
+    title: "what is p2p world cup trading contest?",
+    description: "literally nobody put india on this leaderboard expecting fireworks. let's fix that",
+    link: "https://x.com/luxw_tf/status/2067871000994435341?s=20",
     embed: (
       <iframe
         src="https://player.mux.com/Sx3hCbceXxMmBKa7qwz8lmR00HfQLKzVLN101iWfVRvPQ?poster_time=0&autoplay=true&muted=true"
@@ -108,7 +108,12 @@ const SelectedWork = () => {
           
           <div className="work-details" ref={infoRef}>
             <div className="work-info">
-              <h3 className="work-title">{projects[currentIndex].title}</h3>
+              <div className="work-title-wrapper">
+                <h3 className="work-title">{projects[currentIndex].title}</h3>
+                <a href={projects[currentIndex].link} target="_blank" rel="noreferrer" className="work-ext-link" aria-label="view original post">
+                  <ExternalLink size={24} />
+                </a>
+              </div>
               <p className="work-desc">{projects[currentIndex].description}</p>
             </div>
             
